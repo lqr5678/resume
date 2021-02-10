@@ -50,7 +50,6 @@ const pathToSign = () => {
      * 描述
      */
     const des = computed(() => {
-        console.log(router,router.currentRoute.value)
         const {
             path,
             name
