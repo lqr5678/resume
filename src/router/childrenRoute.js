@@ -10,7 +10,7 @@ export const childrenRoute = [{
     },
     {
         path: '/Resume',
-        name: "项目经历",
+        name: "个人评价",
         component: () => import("../views/Resume.vue")
     },
     {

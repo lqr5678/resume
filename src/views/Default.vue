@@ -7,7 +7,7 @@
       </button>
       <button class="col btn btn-light rounded border-0" @click="toPage('Resume')">
         <my-icon id="icon-xinxi" color="text-warning" size="45"></my-icon>
-        <h3>项目经历</h3>
+        <h3>个人评价</h3>
       </button>
     </div>
     <div class="row">

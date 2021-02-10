@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="wrapper">
-      <slide-bar icon-id="icon-wangluo" icon-color="text-warning" icon-size="45">欢迎来到刘某人的在线简历</slide-bar>
+      <slide-bar class="hidden-lg" icon-id="icon-wangluo" icon-color="text-warning" icon-size="45">欢迎来到刘某人的在线简历</slide-bar>
 
       <div class="w-100 pre-scrollable scrollbar" style="max-height: 90vh">
         <content-head>
@@ -14,7 +14,7 @@
         </transition>
       </div>
 
-      <user-profile :src="src" />
+      <user-profile class="hidden-lg" :src="src" />
     </div>
   </div>
 </template>
@@ -60,6 +60,7 @@ export default {
   border-radius: 10px;  
   background-color: #999;  
 }
+
 .home {
   height: 100vh;
   background: url("../assets/img/bg.jpg") no-repeat center;
@@ -75,5 +76,11 @@ export default {
   top: calc(50% - 90vh / 2);
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .hidden-lg {
+        display: none;
+    }
 }
 </style>
